@@ -118,7 +118,7 @@ interface PluginConfig {
   enabled: string[];
 }
 
-const APP_VERSION = "1.0.0";
+const APP_VERSION = "1.2.2";
 const PLUGINS_DIR = ".diabase/plugins";
 const CONFIG_FILE = ".diabase/plugin-config.json";
 
