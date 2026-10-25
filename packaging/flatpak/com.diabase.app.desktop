@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Diabase
+Comment=Modern markdown editor with plugins, themes, and sync
+Exec=diabase
+Icon=com.diabase.app
+Terminal=false
+Categories=Office;TextEditor;
+StartupWMClass=diabase
