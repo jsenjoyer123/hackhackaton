@@ -1,0 +1,13 @@
+{
+  "name": "diabase-mcp",
+  "version": "1.0.1",
+  "description": "MCP server for Diabase — lets AI assistants read, write, and search your notes",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "diabase-mcp": "./index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
