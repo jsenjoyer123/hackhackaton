@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="desktop/public/banner.png" alt="Diabase" />
   <h1>Diabase</h1>
   <p><strong>Fast markdown notes, everywhere.</strong></p>
   <p>
