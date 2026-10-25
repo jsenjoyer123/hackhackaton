@@ -7,6 +7,7 @@ const KEYS = {
   SETUP_COMPLETE: 'diabase:setupComplete',
   WORKSPACE: (vaultId: string) => `diabase:workspace:${vaultId}`,
   GITHUB_TOKEN: (vaultId: string) => `diabase:ghToken:${vaultId}`,
+  GIT_TOKEN: (vaultId: string) => `diabase:gitToken:${vaultId}`,
 };
 
 export async function getItem<T>(key: string): Promise<T | null> {
