@@ -14,6 +14,7 @@
     <a href="https://www.diabase.com"><strong>Website</strong></a> &middot;
     <a href="https://docs.diabase.com"><strong>Docs</strong></a> &middot;
     <a href="https://play.google.com/store/apps/details?id=com.ironstacksoftware.diabase"><strong>Google Play</strong></a> &middot;
+    <a href="https://apps.apple.com/us/app/diabase/id6761115699"><strong>App Store</strong></a> &middot;
     <a href="#-features"><strong>Features</strong></a> &middot;
     <a href="#-getting-started"><strong>Getting Started</strong></a> &middot;
     <a href="#-desktop-app"><strong>Desktop</strong></a> &middot;
