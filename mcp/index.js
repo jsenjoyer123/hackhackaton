@@ -29,12 +29,15 @@ function findConfigDir() {
   const platform = os.platform();
   if (platform === "darwin") return path.join(os.homedir(), "Library", "Application Support", "Diabase");
   if (platform === "win32") return path.join(process.env.APPDATA || path.join(os.homedir(), "AppData", "Roaming"), "Diabase");
-  // Linux: ~/.config/diabase (Electron uses lowercase app name)
+  // Linux: prefer the Tauri config dir (~/.config/Diabase). Fall back to the
+  // legacy Electron lowercase dir only if the Tauri one has no config.json,
+  // so users mid-migration keep working.
   const base = process.env.XDG_CONFIG_HOME || path.join(os.homedir(), ".config");
-  // Try lowercase first (how Electron names it on Linux), fall back to capitalized
-  const lower = path.join(base, "diabase");
-  if (fs.existsSync(lower)) return lower;
-  return path.join(base, "Diabase");
+  const tauri = path.join(base, "Diabase");
+  if (fs.existsSync(path.join(tauri, "config.json"))) return tauri;
+  const legacy = path.join(base, "diabase");
+  if (fs.existsSync(path.join(legacy, "config.json"))) return legacy;
+  return tauri;
 }
 
 function loadDiabaseConfig() {
