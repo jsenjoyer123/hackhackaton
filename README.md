@@ -347,7 +347,18 @@ sudo dnf copr enable jacedev/diabase
 sudo dnf install diabase
 ```
 
-`dnf upgrade` keeps it current. For other platforms, grab a build from the [latest release](https://github.com/jsenjoyer123/Diabase/releases/latest):
+`dnf upgrade` keeps it current.
+
+**Flatpak (any Linux distro)**
+
+```bash
+flatpak remote-add --if-not-exists --no-gpg-verify diabase https://flatpak.jsenjoyer123.xyz/diabase/repo
+flatpak install diabase com.diabase.Diabase
+```
+
+`flatpak update` keeps it current.
+
+For other platforms, grab a build from the [latest release](https://github.com/jsenjoyer123/Diabase/releases/latest):
 
 | Platform | Formats |
 |---|---|
