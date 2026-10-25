@@ -7,6 +7,7 @@
     "email": "jsenjoyer123@users.noreply.github.com"
   },
   "homepage": "https://diabase.com",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev:next": "next dev --port 3456 --webpack",
