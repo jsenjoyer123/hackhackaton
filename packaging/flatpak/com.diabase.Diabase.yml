@@ -1,0 +1,35 @@
+id: com.diabase.Diabase
+runtime: org.gnome.Platform
+runtime-version: '47'
+sdk: org.gnome.Sdk
+command: diabase
+
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --share=ipc
+  - --device=dri
+  - --share=network
+  - --filesystem=home
+
+modules:
+  - name: diabase
+    buildsystem: simple
+    build-commands:
+      - ar x *.deb
+      - tar -xf data.tar.gz
+      - install -Dm755 usr/bin/diabase /app/bin/diabase
+      - install -Dm644 usr/share/icons/hicolor/128x128/apps/diabase.png
+        /app/share/icons/hicolor/128x128/apps/com.diabase.Diabase.png
+      - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/diabase.png
+        /app/share/icons/hicolor/256x256/apps/com.diabase.Diabase.png
+      - install -Dm644 com.diabase.Diabase.desktop /app/share/applications/com.diabase.Diabase.desktop
+      - install -Dm644 com.diabase.Diabase.metainfo.xml /app/share/metainfo/com.diabase.Diabase.metainfo.xml
+    sources:
+      - type: file
+        url: https://github.com/jsenjoyer123/Diabase/releases/download/v2.1.1/Diabase_2.1.1_amd64.deb
+        sha256: 40fb14f626b2702036d5425567ab9ce28e7a977d9e09fb681afac9aa98cd7133
+      - type: file
+        path: com.diabase.Diabase.desktop
+      - type: file
+        path: com.diabase.Diabase.metainfo.xml
