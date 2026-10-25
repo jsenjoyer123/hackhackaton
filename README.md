@@ -14,7 +14,7 @@
     <a href="https://www.diabase.com"><strong>Website</strong></a> &middot;
     <a href="https://docs.diabase.com"><strong>Docs</strong></a> &middot;
     <a href="https://play.google.com/store/apps/details?id=com.ironstacksoftware.diabase"><strong>Google Play</strong></a> &middot;
-    <a href="https://apps.apple.com/us/app/diabase/id6761115699"><strong>App Store</strong></a> &middot;
+    <a href="https://apps.apple.com/app/id6761115699"><strong>App Store</strong></a> &middot;
     <a href="#-features"><strong>Features</strong></a> &middot;
     <a href="#-getting-started"><strong>Getting Started</strong></a> &middot;
     <a href="#-desktop-app"><strong>Desktop</strong></a> &middot;
@@ -492,6 +492,8 @@ desktop/
 > **Work in progress.** All features come to desktop first, then mobile.
 
 The mobile app aims for feature parity with the desktop, adapted for touch interfaces. Notes are stored in the app's document directory and synced via the GitHub REST API.
+
+**Get it:** [App Store](https://apps.apple.com/app/id6761115699) &middot; [Google Play](https://play.google.com/store/apps/details?id=com.ironstacksoftware.diabase) &middot; [Android APK](app-apk/diabase.apk) (direct sideload download)
 
 ### Development
 
