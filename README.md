@@ -338,6 +338,23 @@ cd Diabase
 
 The desktop app provides the full Diabase experience with a CodeMirror-based editor, native file system access, and Git integration via the system's git binary.
 
+### Install
+
+**Fedora (COPR)**
+
+```bash
+sudo dnf copr enable jacedev/diabase
+sudo dnf install diabase
+```
+
+`dnf upgrade` keeps it current. For other platforms, grab a build from the [latest release](https://github.com/jsenjoyer123/Diabase/releases/latest):
+
+| Platform | Formats |
+|---|---|
+| Linux | `.rpm`, `.deb`, AppImage |
+| Windows | `.exe` installer, portable `.zip` |
+| macOS | `.dmg` |
+
 ### Development
 
 ```bash
